@@ -69,5 +69,5 @@ func main() {
 		log.Fatal("specify endpoint with -url")
 	}
 
-	log.Printf("harvesting %s in %s from %s from %s to %s", *set, *prefix, endpoint, *from, *to)
+	log.Printf("%s %s--%s (set=%s, prefix=%s)", endpoint, *from, *to, *set, *prefix)
 }
