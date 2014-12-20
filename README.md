@@ -29,21 +29,20 @@ Download with a given prefix.
 
 Download for a given date range.
 
-    $ oaizz -url www.doabooks.org/oai -set articles -prefix marcxml -from 2010-01-01 -to 2011-01-01
+    $ oaizz -url www.doabooks.org/oai -set articles -prefix marcxml \
+            -from 2010-01-01 -to 2011-01-01
 
 Emit the file path for a given harvest.
 
-    $ oaizz -files -url www.doabooks.org/oai -set articles -prefix marcxml -from 2010-01-01 -to 2011-01-01
-
-
-This program is a tool for the service provider side of the OAI protocol (section 2.1).
+    $ oaizz -files -url www.doabooks.org/oai -set articles -prefix marcxml \
+            -from 2010-01-01 -to 2011-01-01
 
 ----
 
-OAI in short
-------------
+OAI notes
+---------
 
-Three entities: resources (real-world), items (abstract), records (formatted). 
+Three entities: resources (real-world), items (abstract), records (formatted).
 
 Items have an identifier, which is unique per repository. There can be multiple formats. The ID must be a URI, but scheme can only be used when adhering to standards.
 
@@ -52,7 +51,4 @@ ID plays a role in:
 * ListIdentifier, ListRecords
 * GetRecord
 
-The response is always XML.
-
-Response has a header, metadata and about.
-
+The response is always XML. Response has a header, metadata and about.
